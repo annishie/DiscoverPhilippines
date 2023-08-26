@@ -1,104 +1,118 @@
 <!DOCTYPE html>
 <htm lang="en">
-<head>
-<meta charset="utf-8">
-<meta http-equiv="X-UA-Compatible" content="IE=edge">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<link href="https://fonts.googleapis.com/css?family=Roboto:400,700" rel="stylesheet">
-<title>Log In | Register</title>
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-<script src="./vendor/jquery/jquery.min.js"></script>
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script> 
-<style type="text/css">
-body {
-    margin: 0;
-    padding: 0;
-    font-family: 'Roboto', sans-serif;
-    background: url('/img/1.gif') no-repeat center center fixed;
-    background-size: cover;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    min-height: 100vh;
-    color: #fff;
-}
-    .form-control {
+
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,700" rel="stylesheet">
+    <title>Log In | Register</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="./vendor/jquery/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <style type="text/css">
+      body {
+        margin: 0;
+        padding: 0;
+        font-family: 'Roboto', sans-serif;
+        background: url('/img/1.gif') no-repeat center center fixed;
+        background-size: cover;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        min-height: 100vh;
+        color: #fff;
+      }
+
+      .form-control {
         min-height: 50px;
-		border-color: #e1e4e5;
-	}
-    .form-control, .btn {        
+        border-color: #e1e4e5;
+      }
+
+      .form-control,
+      .btn {
         border-radius: 3px;
-    }    
-	.signup-form {
-		width: 450px;
-		margin: 0 auto;
-		padding: 30px 0;
-	}	
-    .signup-form form {
-		color: #9ba5a8;
-		border-radius: 3px;
-    	margin-bottom: 15px;
+      }
+
+      .signup-form {
+        width: 450px;
+        margin: 0 auto;
+        padding: 30px 0;
+      }
+
+      .signup-form form {
+        color: #9ba5a8;
+        border-radius: 3px;
+        margin-bottom: 15px;
         background: #fff;
         box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.3);
         padding: 30px;
-    }
-	.signup-form h2 {
-		color: #333;
-		font-weight: bold;   
-    }
-	.signup-form .form-group {
-		margin-bottom: 20px;
-	}
-    .signup-form .btn {        
+      }
+
+      .signup-form h2 {
+        color: #333;
+        font-weight: bold;
+      }
+
+      .signup-form .form-group {
+        margin-bottom: 20px;
+      }
+
+      .signup-form .btn {
         font-size: 16px;
         font-weight: bold;
-		background: #007bff;
-		border: none;
-		min-width: 140px;
-    }
-	.signup-form .btn:hover, .signup-form .btn:focus {
-		background: #221fc9;
-	}
-	.signup-form a {
-		color: #fff;
-		text-decoration: underline;
-	}
-	.signup-form form a {
-		color: #007bff;
-		text-decoration: none;
-	}	
-	.signup-form form a:hover {
-		text-decoration: underline;
-	}
-</style>
-</head>
+        background: #007bff;
+        border: none;
+        min-width: 140px;
+      }
 
-<div class="signup-form">
+      .signup-form .btn:hover,
+      .signup-form .btn:focus {
+        background: #221fc9;
+      }
+
+      .signup-form a {
+        color: #fff;
+        text-decoration: underline;
+      }
+
+      .signup-form form a {
+        color: #007bff;
+        text-decoration: none;
+      }
+
+      .signup-form form a:hover {
+        text-decoration: underline;
+      }
+    </style>
+  </head>
+<body>
+  <div class="signup-form">
     <form action="#" method="#">
-		<h2>Sign Up</h2>
-		<p>It's free and only takes a minute.</p>
-		<hr>
+      <h2>Sign Up</h2>
+      <p>It's free and only takes a minute.</p>
+      <hr>
+      <div class="form-group">
+        <input type="text" class="form-control" name="username" placeholder="Username" required="required">
         <div class="form-group">
-        	<input type="text" class="form-control" name="username" placeholder="Username" required="required">
+          <input type="email" class="form-control" name="email" placeholder="Email Address" required="required">
         </div>
-        <div class="form-group">
-        	<input type="email" class="form-control" name="email" placeholder="Email Address" required="required">
-        </div>
-		<div class="form-group">
-            <input type="password" class="form-control" name="password" placeholder="Password" required="required">
-        </div>
-		<div class="form-group">
-            <input type="password" class="form-control" name="confirm_password" placeholder="Confirm Password" required="required">
-        </div>
-		<div class="form-group">
-            <a href="/index.html" class="btn btn-primary btn-block btn-lg">Sign Up</a>
-        </div>
-		<p class="small text-center">By clicking the Sign Up button, you agree to our <br><a href="#">Terms &amp; Conditions</a>, and <a href="#">Privacy Policy</a>.</p>
+
+      </div>
+      <div class="form-group">
+        <input type="password" class="form-control" name="password" placeholder="Password" required="required">
+      </div>
+      <div class="form-group">
+        <input type="password" class="form-control" name="confirm_password" placeholder="Confirm Password" required="required">
+      </div>
+      <div class="form-group">
+        <a href="/index.html" class="btn btn-primary btn-block btn-lg">Sign Up</a>
+      </div>
+      <p class="small text-center">By clicking the Sign Up button, you agree to our <br><a href="#">Terms &amp; Conditions</a>, and <a href="#">Privacy Policy</a>.</p>
     </form>
-	<div class="text-center">Already have an account? <a href="/html/login.html">Login here</a></div>
-</div>
+    <div class="text-center">Already have an account? <a href="/html/login.html">Login here</a></div>
+  </div>
 
-
-</body>
+  </body>
 </html>
